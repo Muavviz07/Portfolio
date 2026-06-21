@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="gqKbf3tXpnpjrQHwoDoE_eNLUPLbz2dIWViJwSnd5S4" />
     <title>Md Muavviz | Software Engineer</title>
     <link rel="icon" href="favicon.png" type="image/png">
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
@@ -76,7 +75,7 @@
             justify-content: center;
             transition: transform 0.8s cubic-bezier(0.8, 0, 0.2, 1);
         }
-
+        
         #loader.slide-up {
             transform: translateY(-100%);
         }
@@ -96,25 +95,10 @@
             }
         }
 
-        .sheet-hero {
-            z-index: 40;
-            background-color: #F3F1EB;
-        }
-
-        .sheet-about {
-            z-index: 30;
-            background-color: #ffffff;
-        }
-
-        .sheet-skills {
-            z-index: 20;
-            background-color: #EFECE6;
-        }
-
-        .sheet-work {
-            z-index: 10;
-            background-color: #ffffff;
-        }
+        .sheet-hero { z-index: 40; background-color: #F3F1EB; }
+        .sheet-about { z-index: 30; background-color: #ffffff; }
+        .sheet-skills { z-index: 20; background-color: #EFECE6; }
+        .sheet-work { z-index: 10; background-color: #ffffff; }
 
         /* Glassmorphism Capsules */
         .glass-capsule {
@@ -125,7 +109,6 @@
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
             transition: all 0.3s ease;
         }
-
         .glass-capsule:hover {
             transform: scale(1.05) translateY(-5px);
             background: rgba(255, 255, 255, 0.6);
@@ -139,23 +122,14 @@
             transform: translateY(40px);
             transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
         }
-
         .reveal-up.active {
             opacity: 1;
             transform: translateY(0);
         }
 
-        .delay-100 {
-            transition-delay: 100ms;
-        }
-
-        .delay-200 {
-            transition-delay: 200ms;
-        }
-
-        .delay-300 {
-            transition-delay: 300ms;
-        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
 
         /* ——— TOOLKIT: MOSAIC GRID ——— */
         .mosaic-grid {
@@ -163,21 +137,19 @@
             grid-template-columns: repeat(12, 1fr);
             gap: 1.5rem;
         }
-
         .mosaic-card {
             border-radius: 2rem;
             padding: 2.5rem;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0,0,0,0.03);
         }
-
         .mosaic-card:hover {
             transform: translateY(-8px) scale(1.01);
             box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
         }
-
+        
         /* Tech Pills */
         .tech-pill-md {
             display: inline-flex;
@@ -186,10 +158,10 @@
             border-radius: 0.75rem;
             font-weight: 700;
             color: #334155;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             transition: all 0.2s;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            padding: 0.35rem 0.75rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            padding: 0.35rem 0.75rem; 
             font-size: 0.75rem;
         }
 
@@ -202,88 +174,44 @@
 
         .tech-pill-md:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
             color: #2DCD7A;
         }
 
-        .col-span-12 {
-            grid-column: span 12;
-        }
-
+        .col-span-12 { grid-column: span 12; }
         @media (min-width: 768px) {
-            .col-span-6 {
-                grid-column: span 6;
-            }
-
-            .col-span-4 {
-                grid-column: span 4;
-            }
-
-            .col-span-8 {
-                grid-column: span 8;
-            }
+            .col-span-6 { grid-column: span 6; }
+            .col-span-4 { grid-column: span 4; }
+            .col-span-8 { grid-column: span 8; }
         }
 
         /* ——— WORK: STICKY CARDS ——— */
         .sticky-card {
             position: sticky;
-            margin-bottom: 4rem;
+            margin-bottom: 4rem; 
             transform-origin: center top;
             transition: transform 0.5s ease, box-shadow 0.5s ease;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
             cursor: pointer;
         }
-
+        
         .sticky-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.2);
         }
 
         /* Mobile Stacking Offsets */
-        .card-1 {
-            z-index: 10;
-            top: 80px;
-        }
-
-        .card-2 {
-            z-index: 20;
-            top: 95px;
-        }
-
-        .card-3 {
-            z-index: 30;
-            top: 110px;
-        }
-
-        .card-4 {
-            z-index: 40;
-            top: 125px;
-        }
+        .card-1 { z-index: 10; top: 80px; }
+        .card-2 { z-index: 20; top: 95px; }
+        .card-3 { z-index: 30; top: 110px; }
+        .card-4 { z-index: 40; top: 125px; }
 
         @media (min-width: 768px) {
-            .sticky-card {
-                top: 100px;
-            }
-
-            .card-1 {
-                z-index: 10;
-                top: 100px;
-            }
-
-            .card-2 {
-                z-index: 20;
-                top: 120px;
-            }
-
-            .card-3 {
-                z-index: 30;
-                top: 140px;
-            }
-
-            .card-4 {
-                z-index: 40;
-                top: 160px;
-            }
+            .sticky-card { top: 100px; }
+            .card-1 { z-index: 10; top: 100px; }
+            .card-2 { z-index: 20; top: 120px; }
+            .card-3 { z-index: 30; top: 140px; }
+            .card-4 { z-index: 40; top: 160px; }
         }
 
         .footer-text-hover {
@@ -295,7 +223,6 @@
             color: transparent;
             transition: all 0.5s ease;
         }
-
         .footer-link:hover .footer-text-hover {
             background-position: right bottom;
             color: #2DCD7A;
@@ -308,10 +235,9 @@
     <div id="loader">
         <div class="flex flex-col items-center">
             <div class="text-5xl md:text-7xl font-serif font-bold text-white flex items-end tracking-tighter mb-4">
-                Muavviz<span
-                    class="text-accent-green text-6xl md:text-8xl inline-block animate-bounce-heavy ml-1">.</span>
+                Muavviz<span class="text-accent-green text-6xl md:text-8xl inline-block animate-bounce-heavy ml-1">.</span>
             </div>
-
+            
             <div class="w-32 h-1 bg-gray-800 rounded-full overflow-hidden mt-2">
                 <div class="h-full bg-accent-green animate-progress"></div>
             </div>
@@ -321,105 +247,79 @@
 
     <nav class="absolute w-full z-50 top-0 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-
-            <a href="#"
-                class="text-2xl font-serif font-bold tracking-tight relative z-50 group text-charcoal md:text-charcoal md:mix-blend-normal">
+            
+            <a href="#" class="text-2xl font-serif font-bold tracking-tight relative z-50 group text-charcoal md:text-charcoal md:mix-blend-normal">
                 Muavviz<span class="text-accent-green text-3xl inline-block group-hover:animate-bounce">.</span>
             </a>
 
-            <div
-                class="hidden md:flex items-center gap-1 bg-white/80 backdrop-blur-md p-1.5 rounded-full border border-white/40 shadow-sm">
-                <a href="#about"
-                    class="px-5 py-2 rounded-full text-sm font-semibold hover:bg-cream transition-colors">About</a>
-                <a href="#skills"
-                    class="px-5 py-2 rounded-full text-sm font-semibold hover:bg-cream transition-colors">Toolkit</a>
-                <a href="#work"
-                    class="px-5 py-2 rounded-full text-sm font-semibold hover:bg-cream transition-colors">Work</a>
-                <a href="#contact"
-                    class="px-6 py-2 rounded-full bg-soft-black text-white text-sm font-semibold hover:bg-accent-green hover:shadow-lg hover:shadow-green-200 transition-all">Let's
-                    Talk</a>
+            <div class="hidden md:flex items-center gap-1 bg-white/80 backdrop-blur-md p-1.5 rounded-full border border-white/40 shadow-sm">
+                <a href="#about" class="px-5 py-2 rounded-full text-sm font-semibold hover:bg-cream transition-colors">About</a>
+                <a href="#skills" class="px-5 py-2 rounded-full text-sm font-semibold hover:bg-cream transition-colors">Toolkit</a>
+                <a href="#work" class="px-5 py-2 rounded-full text-sm font-semibold hover:bg-cream transition-colors">Work</a>
+                <a href="#contact" class="px-6 py-2 rounded-full bg-soft-black text-white text-sm font-semibold hover:bg-accent-green hover:shadow-lg hover:shadow-green-200 transition-all">Let's Talk</a>
             </div>
 
-            <a href="#contact"
-                class="md:hidden bg-soft-black text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-accent-green transition-colors shadow-lg z-50 relative">
+            <a href="#contact" class="md:hidden bg-soft-black text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-accent-green transition-colors shadow-lg z-50 relative">
                 Let's Talk
             </a>
         </div>
     </nav>
 
-    <section
-        class="curved-sheet sheet-hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-
+    <section class="curved-sheet sheet-hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-            <div
-                class="absolute top-[-5%] right-[-10%] w-[250px] md:w-[600px] h-[250px] md:h-[600px] bg-green-200/40 rounded-full blur-[60px] md:blur-[120px] animate-float-1">
-            </div>
-            <div
-                class="absolute bottom-[-5%] left-[-10%] w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-blue-200/30 rounded-full blur-[60px] md:blur-[100px] animate-float-3">
-            </div>
+            <div class="absolute top-[-5%] right-[-10%] w-[250px] md:w-[600px] h-[250px] md:h-[600px] bg-green-200/40 rounded-full blur-[60px] md:blur-[120px] animate-float-1"></div>
+            <div class="absolute bottom-[-5%] left-[-10%] w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-blue-200/30 rounded-full blur-[60px] md:blur-[100px] animate-float-3"></div>
         </div>
 
         <div class="absolute inset-0 pointer-events-none md:pointer-events-auto">
-            <div
-                class="glass-capsule absolute top-[15%] -left-[5%] md:left-[10%] scale-75 md:scale-100 px-5 py-2 rounded-full flex items-center gap-2 animate-float-1 cursor-default">
+            <div class="glass-capsule absolute top-[15%] -left-[5%] md:left-[10%] scale-75 md:scale-100 px-5 py-2 rounded-full flex items-center gap-2 animate-float-1 cursor-default">
                 <i class="fab fa-react text-cyan-400 text-lg"></i>
                 <span class="font-bold text-sm text-gray-700">React.js</span>
             </div>
-
-            <div
-                class="glass-capsule absolute bottom-[25%] -right-[5%] md:right-[10%] scale-75 md:scale-100 px-6 py-3 rounded-full flex items-center gap-2 animate-float-2 cursor-default">
+            
+            <div class="glass-capsule absolute bottom-[25%] -right-[5%] md:right-[10%] scale-75 md:scale-100 px-6 py-3 rounded-full flex items-center gap-2 animate-float-2 cursor-default">
                 <i class="fab fa-python text-yellow-500 text-xl"></i>
                 <span class="font-bold text-sm text-gray-700">Python</span>
             </div>
-
-            <div
-                class="glass-capsule absolute top-[18%] -right-[2%] md:right-[20%] scale-75 md:scale-100 px-4 py-2 rounded-full flex items-center gap-2 animate-float-4 cursor-default">
+            
+            <div class="glass-capsule absolute top-[18%] -right-[2%] md:right-[20%] scale-75 md:scale-100 px-4 py-2 rounded-full flex items-center gap-2 animate-float-4 cursor-default">
                 <i class="fab fa-android text-blue-500 text-lg"></i>
                 <span class="font-bold text-sm text-gray-700">Flutter</span>
             </div>
-
-            <div
-                class="glass-capsule absolute bottom-[15%] -left-[2%] md:left-[15%] scale-75 md:scale-100 px-5 py-2 rounded-full flex items-center gap-2 animate-float-3 cursor-default">
+            
+            <div class="glass-capsule absolute bottom-[15%] -left-[2%] md:left-[15%] scale-75 md:scale-100 px-5 py-2 rounded-full flex items-center gap-2 animate-float-3 cursor-default">
                 <i class="fas fa-database text-purple-500 text-lg"></i>
                 <span class="font-bold text-sm text-gray-700">PostgreSQL</span>
             </div>
         </div>
 
         <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-            <div
-                class="inline-block mb-6 px-4 py-1 rounded-full border border-gray-300 bg-white/50 backdrop-blur-sm reveal-up">
-                <span class="text-xs font-bold tracking-widest uppercase text-gray-500">Available for Full-Time &
-                    Freelance</span>
+            <div class="inline-block mb-6 px-4 py-1 rounded-full border border-gray-300 bg-white/50 backdrop-blur-sm reveal-up">
+                <span class="text-xs font-bold tracking-widest uppercase text-gray-500">Available for Full-Time & Freelance</span>
                 <span class="inline-block w-2 h-2 bg-accent-green rounded-full ml-2 animate-pulse"></span>
             </div>
 
-            <h1
-                class="text-6xl md:text-8xl lg:text-9xl font-serif font-semibold tracking-tighter leading-[1.0] md:leading-[0.9] text-soft-black mb-8 reveal-up delay-100">
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-serif font-semibold tracking-tighter leading-[1.0] md:leading-[0.9] text-soft-black mb-8 reveal-up delay-100">
                 Full-Stack <br>
-                <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-cyan-500 to-blue-600 pb-2">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-cyan-500 to-blue-600 pb-2">
                     Developer.
                 </span>
             </h1>
 
             <p class="text-lg md:text-2xl text-gray-600 font-medium max-w-2xl mx-auto mb-10 reveal-up delay-200 px-2">
-                I ship products. React frontends, Flutter apps, Python backends.
+                I ship products. React frontends, Flutter apps, Python backends. 
                 Published to App Store and Play Store. Clean code. Production-ready.
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-5 reveal-up delay-300">
-                <a href="#work"
-                    class="group relative px-6 py-3 w-64 md:px-8 md:py-4 md:w-auto bg-soft-black text-white rounded-full font-bold overflow-hidden">
+                <a href="#work" class="group relative px-6 py-3 w-64 md:px-8 md:py-4 md:w-auto bg-soft-black text-white rounded-full font-bold overflow-hidden">
                     <span class="relative z-10 group-hover:text-accent-green transition-colors">Explore Work</span>
-                    <div
-                        class="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300">
-                    </div>
+                    <div class="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
                 </a>
-
-                <a href="Muavviz-Resume.pdf" download
-                    class="group px-6 py-3 w-64 md:px-8 md:py-4 md:w-auto bg-transparent border border-gray-300 text-soft-black rounded-full font-bold hover:bg-white hover:border-white hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                    Download Resume <i
-                        class="fas fa-download group-hover:translate-y-1 transition-transform duration-300"></i>
+                
+                <a href="Muavviz-Resume.pdf" download class="group px-6 py-3 w-64 md:px-8 md:py-4 md:w-auto bg-transparent border border-gray-300 text-soft-black rounded-full font-bold hover:bg-white hover:border-white hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                    Download Resume <i class="fas fa-download group-hover:translate-y-1 transition-transform duration-300"></i>
                 </a>
             </div>
         </div>
@@ -428,19 +328,14 @@
     <section class="curved-sheet sheet-about py-16 md:py-24 px-6" id="about">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-
+                
                 <div class="lg:col-span-5 reveal-up group relative">
-                    <div
-                        class="h-[400px] md:h-[550px] w-full bg-gray-100 rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-xl rounded-br-xl md:rounded-tr-[6rem] md:rounded-bl-[6rem] md:rounded-tl-2xl md:rounded-br-2xl overflow-hidden relative shadow-2xl transition-all duration-700 md:-rotate-2 group-hover:rotate-0 group-hover:shadow-[0_20px_50px_rgba(45,205,122,0.2)]">
-                        <img src="Muavviz-Formal-suit.png" alt="Md Muavviz"
-                            class="w-full h-full object-cover transition-all duration-700 scale-105 group-hover:scale-100">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-soft-black/20 to-transparent mix-blend-multiply">
-                        </div>
+                    <div class="h-[400px] md:h-[550px] w-full bg-gray-100 rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-xl rounded-br-xl md:rounded-tr-[6rem] md:rounded-bl-[6rem] md:rounded-tl-2xl md:rounded-br-2xl overflow-hidden relative shadow-2xl transition-all duration-700 md:-rotate-2 group-hover:rotate-0 group-hover:shadow-[0_20px_50px_rgba(45,205,122,0.2)]">
+                        <img src="Muavviz-Formal-suit.png" alt="Md Muavviz" class="w-full h-full object-cover transition-all duration-700 scale-105 group-hover:scale-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-soft-black/20 to-transparent mix-blend-multiply"></div>
                     </div>
 
-                    <div
-                        class="absolute top-8 -left-2 md:-left-8 bg-white/95 backdrop-blur-xl px-5 py-3 rounded-r-full shadow-lg border-l-4 border-accent-green animate-float-4 z-20">
+                    <div class="absolute top-8 -left-2 md:-left-8 bg-white/95 backdrop-blur-xl px-5 py-3 rounded-r-full shadow-lg border-l-4 border-accent-green animate-float-4 z-20">
                         <div class="flex items-center gap-3">
                             <div class="text-accent-green text-lg">
                                 <i class="fas fa-code-branch"></i>
@@ -454,49 +349,35 @@
                 </div>
 
                 <div class="lg:col-span-7 reveal-up delay-100 pl-0 lg:pl-10 pt-12 md:pt-0">
-                    <h2
-                        class="text-sm font-bold tracking-widest uppercase text-accent-green mb-6 flex items-center gap-2">
-                        <span class="w-8 h-[1px] bg-accent-green inline-block"></span>
+                    <h2 class="text-sm font-bold tracking-widest uppercase text-accent-green mb-6 flex items-center gap-2">
+                        <span class="w-8 h-[1px] bg-accent-green inline-block"></span> 
                         Full-Stack Engineer
                     </h2>
-
+                    
                     <h3 class="text-3xl md:text-5xl font-serif font-bold text-soft-black mb-8 leading-tight">
                         Building products <span class="italic text-gray-400 font-light">that ship</span> <br>
-                        across web <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-soft-black to-accent-green">&
-                            mobile.</span>
+                        across web <span class="text-transparent bg-clip-text bg-gradient-to-r from-soft-black to-accent-green">& mobile.</span>
                     </h3>
-
+                    
                     <p class="text-base md:text-lg text-gray-600 leading-relaxed mb-10 border-l-2 border-gray-200 pl-6">
-                        I'm <span class="font-bold text-soft-black">Muavviz</span>, a full-stack developer who ships
-                        products to production. I specialize in <span class="font-bold text-blue-600">React.js</span> &
-                        <span class="font-bold text-blue-600">Next.js</span> frontends, <span
-                            class="font-bold text-purple-600">Flutter</span> mobile apps, and <span
-                            class="font-bold text-yellow-600">Python</span> backends. Published apps on both iOS App
-                        Store and Google Play Store. I build scalable systems that don't just work—they excel.
+                        I'm <span class="font-bold text-soft-black">Muavviz</span>, a full-stack developer who ships products to production. I specialize in <span class="font-bold text-blue-600">React.js</span> & <span class="font-bold text-blue-600">Next.js</span> frontends, <span class="font-bold text-purple-600">Flutter</span> mobile apps, and <span class="font-bold text-yellow-600">Python</span> backends. Published apps on both iOS App Store and Google Play Store. I build scalable systems that don't just work—they excel.
                     </p>
 
                     <div class="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8 pt-8 border-t border-gray-100">
-                        <div
-                            class="group cursor-default p-4 rounded-2xl bg-gray-50/50 hover:bg-gray-50 transition-colors border border-gray-100">
-                            <div
-                                class="mb-3 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cream flex items-center justify-center text-soft-black">
+                        <div class="group cursor-default p-4 rounded-2xl bg-gray-50/50 hover:bg-gray-50 transition-colors border border-gray-100">
+                            <div class="mb-3 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cream flex items-center justify-center text-soft-black">
                                 <i class="fas fa-graduation-cap text-sm md:text-base"></i>
                             </div>
-                            <p class="text-[10px] md:text-sm text-gray-400 font-bold uppercase tracking-wider mb-1">
-                                Education</p>
+                            <p class="text-[10px] md:text-sm text-gray-400 font-bold uppercase tracking-wider mb-1">Education</p>
                             <p class="text-base md:text-xl font-bold text-soft-black leading-tight">MCA SRM IST</p>
                             <p class="text-xs md:text-sm text-accent-green font-medium">9.2 CGPA</p>
                         </div>
 
-                        <div
-                            class="group cursor-default p-4 rounded-2xl bg-gray-50/50 hover:bg-gray-50 transition-colors border border-gray-100">
-                            <div
-                                class="mb-3 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cream flex items-center justify-center text-soft-black">
+                        <div class="group cursor-default p-4 rounded-2xl bg-gray-50/50 hover:bg-gray-50 transition-colors border border-gray-100">
+                            <div class="mb-3 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cream flex items-center justify-center text-soft-black">
                                 <i class="fas fa-rocket text-sm md:text-base"></i>
                             </div>
-                            <p class="text-[10px] md:text-sm text-gray-400 font-bold uppercase tracking-wider mb-1">
-                                Approach</p>
+                            <p class="text-[10px] md:text-sm text-gray-400 font-bold uppercase tracking-wider mb-1">Approach</p>
                             <p class="text-base md:text-xl font-bold text-soft-black leading-tight">Ship Fast</p>
                             <p class="text-xs md:text-sm text-gray-500 font-medium">"In Production"</p>
                         </div>
@@ -509,8 +390,7 @@
 
     <section class="curved-sheet sheet-skills py-16 md:py-24 px-6" id="skills">
         <div class="max-w-7xl mx-auto">
-            <div
-                class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 reveal-up pt-12 md:pt-0">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 reveal-up pt-12 md:pt-0">
                 <div>
                     <h2 class="text-sm font-bold tracking-widest uppercase text-gray-400 mb-2">Technical Stack</h2>
                     <h3 class="text-4xl md:text-5xl font-serif font-bold text-soft-black">Full-Stack Arsenal.</h3>
@@ -518,16 +398,12 @@
             </div>
 
             <div class="mosaic-grid">
-                <div
-                    class="mosaic-card col-span-12 md:col-span-6 bg-[#dbeafe]/80 hover:bg-white hover:ring-1 hover:ring-blue-200 group reveal-up">
-                    <div
-                        class="absolute right-0 top-0 w-32 h-32 bg-blue-200 rounded-bl-full opacity-40 group-hover:scale-110 transition-transform duration-500">
-                    </div>
+                <div class="mosaic-card col-span-12 md:col-span-6 bg-[#dbeafe]/80 hover:bg-white hover:ring-1 hover:ring-blue-200 group reveal-up">
+                    <div class="absolute right-0 top-0 w-32 h-32 bg-blue-200 rounded-bl-full opacity-40 group-hover:scale-110 transition-transform duration-500"></div>
                     <div class="relative z-10">
                         <i class="fab fa-android text-4xl mb-6 text-[#02569B]"></i>
                         <h3 class="text-2xl font-bold mb-2 text-slate-800">Mobile Apps</h3>
-                        <p class="text-slate-600 mb-6 text-sm">Cross-platform apps published to App Store and Play
-                            Store.</p>
+                        <p class="text-slate-600 mb-6 text-sm">Cross-platform apps published to App Store and Play Store.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="tech-pill-md">Flutter</span>
                             <span class="tech-pill-md">Dart</span>
@@ -537,11 +413,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="mosaic-card col-span-12 md:col-span-6 bg-[#fef3c7]/80 hover:bg-white hover:ring-1 hover:ring-yellow-200 group reveal-up delay-100">
-                    <div
-                        class="absolute right-0 bottom-0 w-24 h-24 bg-yellow-300/30 rounded-tl-full group-hover:scale-110 transition-transform duration-500">
-                    </div>
+                <div class="mosaic-card col-span-12 md:col-span-6 bg-[#fef3c7]/80 hover:bg-white hover:ring-1 hover:ring-yellow-200 group reveal-up delay-100">
+                    <div class="absolute right-0 bottom-0 w-24 h-24 bg-yellow-300/30 rounded-tl-full group-hover:scale-110 transition-transform duration-500"></div>
                     <div class="relative z-10 h-full">
                         <i class="fab fa-python text-4xl mb-6 text-[#d97706]"></i>
                         <h3 class="text-2xl font-bold mb-2 text-slate-800">Backend Systems</h3>
@@ -556,8 +429,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="mosaic-card col-span-12 md:col-span-4 bg-[#cffafe]/80 hover:bg-white hover:ring-1 hover:ring-cyan-200 group reveal-up delay-200">
+                <div class="mosaic-card col-span-12 md:col-span-4 bg-[#cffafe]/80 hover:bg-white hover:ring-1 hover:ring-cyan-200 group reveal-up delay-200">
                     <i class="fab fa-react text-3xl mb-4 text-[#06b6d4]"></i>
                     <h3 class="text-xl font-bold mb-2 text-slate-800">Frontend</h3>
                     <p class="text-slate-600 text-xs mb-4">Modern responsive web apps.</p>
@@ -569,8 +441,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="mosaic-card col-span-12 md:col-span-4 bg-[#f0f4ff]/80 hover:bg-white hover:ring-1 hover:ring-indigo-200 group reveal-up delay-200">
+                <div class="mosaic-card col-span-12 md:col-span-4 bg-[#f0f4ff]/80 hover:bg-white hover:ring-1 hover:ring-indigo-200 group reveal-up delay-200">
                     <i class="fas fa-layer-group text-3xl mb-4 text-indigo-600"></i>
                     <h3 class="text-xl font-bold mb-2 text-slate-800">Animation</h3>
                     <p class="text-slate-600 text-xs mb-4">Interactive UI patterns.</p>
@@ -581,8 +452,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="mosaic-card col-span-12 md:col-span-4 bg-[#ffedd5]/80 hover:bg-white hover:ring-1 hover:ring-orange-200 group reveal-up delay-200">
+                <div class="mosaic-card col-span-12 md:col-span-4 bg-[#ffedd5]/80 hover:bg-white hover:ring-1 hover:ring-orange-200 group reveal-up delay-200">
                     <i class="fas fa-server text-3xl mb-4 text-[#f97316]"></i>
                     <h3 class="text-xl font-bold mb-2 text-slate-800">DevOps</h3>
                     <p class="text-slate-600 text-xs mb-4">Deployment & infrastructure.</p>
@@ -605,113 +475,81 @@
             </div>
 
             <div class="relative">
-
-                <div
-                    class="sticky-card card-1 bg-[#dbeafe] text-[#082f49] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col md:flex-row gap-10 group border border-sky-200">
+                
+                <div class="sticky-card card-1 bg-[#dbeafe] text-[#082f49] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col md:flex-row gap-10 group border border-sky-200">
                     <div class="w-full md:w-1/2 flex flex-col justify-center relative z-10">
                         <div class="mb-6">
-                            <span
-                                class="bg-white/60 text-[#0284c7] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">Published
-                                App</span>
+                            <span class="bg-white/60 text-[#0284c7] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">Published App</span>
                         </div>
                         <h3 class="text-3xl md:text-4xl font-serif font-bold mb-4">WQTC App</h3>
                         <p class="text-[#0c4a6e]/80 text-lg mb-8 leading-relaxed">
-                            Cross-platform educational mobile app. Published to both iOS App Store and Google Play
-                            Store. Real-time data sync, Firebase integration, responsive design with Riverpod state
-                            management.
+                            Cross-platform educational mobile app. Published to both iOS App Store and Google Play Store. Real-time data sync, Firebase integration, responsive design with Riverpod state management.
                         </p>
                         <div class="flex items-center gap-4">
-                            <a href="https://play.google.com" target="_blank"
-                                class="inline-flex items-center gap-2 font-bold text-[#0284c7] hover:text-sky-600 transition-colors">
+                            <a href="https://play.google.com" target="_blank" class="inline-flex items-center gap-2 font-bold text-[#0284c7] hover:text-sky-600 transition-colors">
                                 <i class="fab fa-google-play"></i> Play Store
                             </a>
-                            <a href="https://apps.apple.com" target="_blank"
-                                class="inline-flex items-center gap-2 font-bold text-[#0284c7] hover:text-sky-600 transition-colors">
+                            <a href="https://apps.apple.com" target="_blank" class="inline-flex items-center gap-2 font-bold text-[#0284c7] hover:text-sky-600 transition-colors">
                                 <i class="fab fa-app-store"></i> App Store
                             </a>
                         </div>
                     </div>
-                    <div
-                        class="w-full md:w-1/2 bg-white rounded-[2rem] h-64 md:h-auto min-h-0 md:min-h-[300px] relative overflow-hidden shadow-sm border border-sky-100 flex items-center justify-center">
-                        <i
-                            class="fas fa-mobile text-8xl text-sky-100 group-hover:text-sky-300 transition-all duration-700"></i>
+                    <div class="w-full md:w-1/2 bg-white rounded-[2rem] h-64 md:h-auto min-h-0 md:min-h-[300px] relative overflow-hidden shadow-sm border border-sky-100 flex items-center justify-center">
+                        <i class="fas fa-mobile text-8xl text-sky-100 group-hover:text-sky-300 transition-all duration-700"></i>
                     </div>
                 </div>
 
-                <div
-                    class="sticky-card card-2 bg-[#F5F5F4] text-[#1C1917] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 border border-[#E7E5E4] flex flex-col md:flex-row gap-10 group">
+                <div class="sticky-card card-2 bg-[#F5F5F4] text-[#1C1917] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 border border-[#E7E5E4] flex flex-col md:flex-row gap-10 group">
                     <div class="w-full md:w-1/2 flex flex-col justify-center">
                         <div class="mb-6">
-                            <span
-                                class="bg-white/80 text-[#44403C] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm border border-[#D6D3D1]">Web
-                                Platform</span>
+                            <span class="bg-white/80 text-[#44403C] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm border border-[#D6D3D1]">Web Platform</span>
                         </div>
                         <h3 class="text-3xl md:text-4xl font-serif font-bold mb-4">HealthBridge</h3>
                         <p class="text-[#57534E] text-lg mb-8 leading-relaxed">
-                            Full-stack healthcare platform. Python Flask backend with RESTful APIs, SQL database for
-                            patient data, React.js responsive frontend. Appointment scheduling and role-based access
-                            control.
+                            Full-stack healthcare platform. Python Flask backend with RESTful APIs, SQL database for patient data, React.js responsive frontend. Appointment scheduling and role-based access control.
                         </p>
                         <div class="flex gap-3 text-sm font-bold text-[#78716C] uppercase tracking-wide">
                             <span>Python</span> • <span>Flask</span> • <span>React</span> • <span>MySQL</span>
                         </div>
                     </div>
-                    <div
-                        class="w-full md:w-1/2 bg-white rounded-[2rem] h-64 md:h-auto min-h-0 md:min-h-[300px] overflow-hidden relative shadow-sm border border-[#E7E5E4] flex items-center justify-center">
-                        <i
-                            class="fas fa-heartbeat text-8xl text-[#D6D3D1] group-hover:text-[#44403C] transition-all duration-700"></i>
+                    <div class="w-full md:w-1/2 bg-white rounded-[2rem] h-64 md:h-auto min-h-0 md:min-h-[300px] overflow-hidden relative shadow-sm border border-[#E7E5E4] flex items-center justify-center">
+                        <i class="fas fa-heartbeat text-8xl text-[#D6D3D1] group-hover:text-[#44403C] transition-all duration-700"></i>
                     </div>
                 </div>
 
-                <div
-                    class="sticky-card card-3 bg-[#9F1229] text-white rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 border border-red-900 flex flex-col md:flex-row gap-10 group shadow-xl shadow-red-900/20">
+                <div class="sticky-card card-3 bg-[#9F1229] text-white rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 border border-red-900 flex flex-col md:flex-row gap-10 group shadow-xl shadow-red-900/20">
                     <div class="w-full md:w-1/2 flex flex-col justify-center relative z-10">
                         <div class="mb-6">
-                            <span
-                                class="bg-black/20 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-white/20">Corporate
-                                Site</span>
+                            <span class="bg-black/20 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-white/20">Corporate Site</span>
                         </div>
                         <h3 class="text-3xl md:text-4xl font-serif font-bold mb-4">Delq Solutions</h3>
                         <p class="text-red-100/90 text-lg mb-8 leading-relaxed">
-                            High-performance corporate website. React.js frontend with Framer Motion animations,
-                            Three.js 3D elements, Tailwind CSS. FastAPI Python backend with PostgreSQL. Admin panel for
-                            content management.
+                            High-performance corporate website. React.js frontend with Framer Motion animations, Three.js 3D elements, Tailwind CSS. FastAPI Python backend with PostgreSQL. Admin panel for content management.
                         </p>
-                        <a href="https://delqsolutions.com/" target="_blank"
-                            class="inline-flex items-center font-bold text-white hover:text-red-200 transition-colors">
-                            Visit Live Site <i
-                                class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        <a href="https://delqsolutions.com/" target="_blank" class="inline-flex items-center font-bold text-white hover:text-red-200 transition-colors">
+                            Visit Live Site <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
                         </a>
                     </div>
-                    <div
-                        class="w-full md:w-1/2 bg-black/20 rounded-[2rem] h-64 md:h-auto min-h-0 md:min-h-[300px] relative overflow-hidden flex items-center justify-center">
-                        <i
-                            class="fas fa-globe text-8xl text-white/20 group-hover:text-white/40 transition-all duration-700"></i>
+                    <div class="w-full md:w-1/2 bg-black/20 rounded-[2rem] h-64 md:h-auto min-h-0 md:min-h-[300px] relative overflow-hidden flex items-center justify-center">
+                        <i class="fas fa-globe text-8xl text-white/20 group-hover:text-white/40 transition-all duration-700"></i>
                     </div>
                 </div>
 
-                <div
-                    class="sticky-card card-4 bg-black text-white rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 border border-gray-800 flex flex-col md:flex-row gap-10 group shadow-2xl">
+                <div class="sticky-card card-4 bg-black text-white rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 border border-gray-800 flex flex-col md:flex-row gap-10 group shadow-2xl">
                     <div class="w-full md:w-1/2 flex flex-col justify-center">
                         <div class="mb-6">
-                            <span
-                                class="bg-gray-800 text-gray-300 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-gray-700">Next.js
-                                Project</span>
+                            <span class="bg-gray-800 text-gray-300 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-gray-700">Next.js Project</span>
                         </div>
                         <h3 class="text-3xl md:text-4xl font-serif font-bold mb-4">Enterprise Web App</h3>
                         <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                            Currently building enterprise-scale web application using Next.js 16. Focus on SSR
-                            capabilities, performance optimization, and modern deployment practices with best-in-class
-                            developer experience.
+                            Currently building enterprise-scale web application using Next.js 16. Focus on SSR capabilities, performance optimization, and modern deployment practices with best-in-class developer experience.
                         </p>
                         <div class="flex items-center gap-2 text-gray-500 group-hover:text-white transition-colors">
                             <i class="fas fa-code"></i> <span>Next.js • React • TypeScript</span>
                         </div>
                     </div>
-                    <div
-                        class="w-full md:w-1/2 bg-[#111111] rounded-[2rem] h-64 md:h-auto min-h-0 md:min-h-[300px] flex items-center justify-center text-gray-300 relative overflow-hidden border border-gray-800">
-                        <i
-                            class="fas fa-rocket text-8xl text-gray-800 z-10 group-hover:text-gray-600 transition-all duration-700"></i>
+                    <div class="w-full md:w-1/2 bg-[#111111] rounded-[2rem] h-64 md:h-auto min-h-0 md:min-h-[300px] flex items-center justify-center text-gray-300 relative overflow-hidden border border-gray-800">
+                        <i class="fas fa-rocket text-8xl text-gray-800 z-10 group-hover:text-gray-600 transition-all duration-700"></i>
                     </div>
                 </div>
 
@@ -720,9 +558,7 @@
     </section>
 
     <section class="bg-[#050505] text-cream py-20 md:py-32 px-6 relative z-0 overflow-hidden" id="contact">
-        <div class="absolute inset-0 opacity-20 pointer-events-none"
-            style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22 opacity=%220.5%22/%3E%3C/svg%3E');">
-        </div>
+        <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22 opacity=%220.5%22/%3E%3C/svg%3E');"></div>
 
         <div class="max-w-6xl mx-auto relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-start mb-16 md:mb-24">
@@ -731,26 +567,22 @@
                         Let's build <br>
                         <span class="text-gray-600">something great.</span>
                     </h2>
-                    <a href="mailto:muhammedmuavviz@gmail.com"
-                        class="footer-link inline-block text-xl md:text-3xl font-medium border-b border-gray-700 pb-2 hover:border-accent-green transition-colors break-all">
+                    <a href="mailto:muhammedmuavviz@gmail.com" class="footer-link inline-block text-xl md:text-3xl font-medium border-b border-gray-700 pb-2 hover:border-accent-green transition-colors break-all">
                         <span class="footer-text-hover">muhammedmuavviz@gmail.com</span>
                     </a>
                 </div>
 
                 <div class="mt-12 md:mt-0 flex gap-4 reveal-up delay-100">
-                    <a href="https://linkedin.com/in/md-muavviz" target="_blank"
-                        class="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center hover:bg-accent-green hover:text-soft-black hover:border-accent-green transition-all duration-300">
+                    <a href="https://linkedin.com/in/md-muavviz" target="_blank" class="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center hover:bg-accent-green hover:text-soft-black hover:border-accent-green transition-all duration-300">
                         <i class="fab fa-linkedin-in text-xl"></i>
                     </a>
-                    <a href="https://github.com/muavviz07" target="_blank"
-                        class="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center hover:bg-white hover:text-soft-black hover:border-white transition-all duration-300">
+                    <a href="https://github.com/muavviz07" target="_blank" class="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center hover:bg-white hover:text-soft-black hover:border-white transition-all duration-300">
                         <i class="fab fa-github text-xl"></i>
                     </a>
                 </div>
             </div>
 
-            <div
-                class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 border-t border-gray-800 pt-16 text-sm text-gray-500 reveal-up delay-200">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 border-t border-gray-800 pt-16 text-sm text-gray-500 reveal-up delay-200">
                 <div class="col-span-1 md:col-span-2">
                     <p class="mb-4">Md Muavviz — Software Engineer</p>
                     <p>&copy; <span id="year"></span> All Rights Reserved.</p>
@@ -767,17 +599,15 @@
                     <p class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Status</p>
                     <div class="flex items-center gap-2">
                         <span class="relative flex h-3 w-3">
-                            <span
-                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                         </span>
                         <span>Open to Opportunities</span>
                     </div>
                 </div>
             </div>
-
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-                class="absolute right-0 bottom-8 md:bottom-16 w-12 h-12 flex items-center justify-center text-gray-500 hover:text-white transition-colors">
+            
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="absolute right-0 bottom-8 md:bottom-16 w-12 h-12 flex items-center justify-center text-gray-500 hover:text-white transition-colors">
                 <i class="fas fa-arrow-up"></i>
             </button>
         </div>
@@ -792,10 +622,10 @@
         // LOADER Logic
         window.addEventListener('load', () => {
             const loader = document.getElementById('loader');
-
+            
             setTimeout(() => {
                 loader.classList.add('slide-up');
-
+                
                 setTimeout(() => {
                     loader.remove();
                 }, 1000);
@@ -816,5 +646,4 @@
         });
     </script>
 </body>
-
 </html>
